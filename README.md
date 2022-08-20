@@ -11,7 +11,6 @@ version: "3.8"
   curlcron:
     container_name: your_container_name
     image: calrock27/curlcron
-    command: [ "client" ]
     restart: unless-stopped
     environment:
 	# take note of the format.. I found it best to use the yaml key format for enviroment variables. Your intended cron schedule and curl command should follow the "CRON_TASK_1: " formatting with your command following the space after the colon. 
